@@ -39,8 +39,8 @@ public class GameOfLifePresenterClassic implements GameOfLifePresenter, GameOfLi
 
   public void reset() {
     generation.clearGrid();
-    running = true;
-    view.setPlay(true);
+    running = false;
+    view.setPlay(false);
     view.render(generation.getGrid(), generation.getGenerationNumber());
   }
 
